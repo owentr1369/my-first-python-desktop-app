@@ -20,7 +20,11 @@ label = Label(window, text="Hello", font=("Arial Bold", 20))
 label.grid(column=1, row=4)
 
 def clicked():
-        label.configure(text=combo.get())
+    if combo.get() == '1':
+        label.configure(text="You picked 1")
+    elif combo.get() == '2':
+        label.configure(text="You picked 2")
+    else: label.configure(text="You picked other")
 
 btn = Button(window, text="Click Me" ,command=clicked)
 
