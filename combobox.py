@@ -16,8 +16,11 @@ combo.current(1) #set the selected item
 
 combo.grid(column=0, row=0)
 
+label = Label(window, text="Hello", font=("Arial Bold", 20))
+label.grid(column=1, row=4)
+
 def clicked():
-    print(combo.get())
+        label.configure(text=combo.get())
 
 btn = Button(window, text="Click Me" ,command=clicked)
 
