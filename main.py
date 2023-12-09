@@ -21,4 +21,9 @@ def clicked():
 btn = Button(window, text="Click Me", bg="orange", fg="red", command=clicked)
 btn.grid(column=2, row=0)
 
+btn2 = Button(window, text="Click Me", bg="orange", fg="red", state=DISABLED)
+
+btn2.grid(column=0, row=1)
+
+
 window.mainloop()
